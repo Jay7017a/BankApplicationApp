@@ -33,11 +33,12 @@ public class BankApp extends UserLogin{
 		System.out.println("Application Form");
 		System.out.println("Make sure to fill All the Details");
 		System.out.println("Enter Account Holder Name");
-		accountHolderName=sc.next();
+		accountHolderName=sc.nextLine();
 		System.out.println("Enter Mobile Number");
 		mobileNumber=sc.nextLong();
 		System.out.println("Enter Adhard Card Number ");
 		adharCardNumber=sc.nextLong();
+	
 		System.out.println("Enter Bank Type");
 		bankType=sc.next();
 		System.out.println("Enter PAN Card Number");
@@ -51,9 +52,10 @@ public class BankApp extends UserLogin{
 		System.out.println("Either father/Husband Of");
 		fatherOrHusbandOF=sc.next();
 		BankApp addUser1=new BankApp(accountHolderName,adharCardNumber,bankType,initialAmountDeposit,PANCardNumber,address,fatherOrHusbandOF,mobileNumber,martialStatus);
-		
+		System.out.println(addUser1);
 
 	}
+
 
 
 
